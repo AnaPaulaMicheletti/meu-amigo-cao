@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banho e tosa</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<header>
+    <ul>
+        <li><a href="mural_de_caes.html">Mural de cães</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+    </ul>
+</header>
+
+<body>
+    <br>
+    <br>
+
+    <a href="index.html" class="voltar"> Voltar</a>
+    <br>
+    <br>
+    <br>
+
+    <h1>Agendamento para banho</h1>
+    <br>
+    <h2>Faça o seu agendamento com 48h de antecedência</h2>
+    <br>
+    <form action="" id="form-cliente">
+    <legend>Informações do responsável</legend>
+    <br>
+    <div class="input-box">
+        <label for="nome" class="cliente">Nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+        <span class="error"></span>
+    </div>
+    <br>
+    <div class="input-box">
+        <label for="endereco" class="cliente">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" placeholder="R. Ewbert Richard rawww">
+        <span class="error"></span>
+    </div>
+    <br>
+    <div class="input-box">
+        <label for="email" class="cliente">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Equipecao@email.com">
+        <span class="error"></span>
+    </div>
+    <br>
+    <div class="input-box">
+        <label for="telefone" class="cliente">Tel/Cel:</label>
+        <input type="number" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+        <span class="error"></span>
+    </div>
+    <br>
+    <legend>Sobre o animal</legend>
+    <br>
+    <div class="input-box">
+        <label for="pet" class="animal">Nome:</label>
+        <input type="text" name="pet" id="pet" placeholder="Digite o nome do animal">
+    </div>
+    <br>
+    <div class="input-box">
+        <label for="porte" class="animal">Selecione o tamanho do animal:</label>
+        Grande<input type="radio" name="porte" id="grande">
+        Médio<input type="radio" name="porte" id="medio">
+        Pequeno<input type="radio" name="porte" id="pequeno">
+    </div>
+    <br>
+    <div class="input-box">
+        <label for="servicos" class="servico">Selecione qual serviço:</label>
+        <select name="servicos" id="servicos">
+            <option value="nenhum">nenhum</option>
+            <option value="padrão">Tosa padrão</option>
+            <option value="higienica">Tosa higiênica</option>
+            <option value="tesoura">Tosa na tesoura</option>
+            <option value="raca">Tosa de raça</option>
+            <option value="filhote">Tosa filhote</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="observacoes" class="animal">Observações:</label>
+        <textarea name="observacoes" id="observacoes" cols="50" rows="2" placeholder="Digite qualquer informação adicional..."></textarea>
+    </div>
+    <br>
+    <legend>Horário</legend>
+    <br>
+    <div>
+        <label for="dias" class="cliente">Indique o dia da semana de sua preferência:</label>
+        <select name="dias" class="dia">
+            <option value="terca">Terça-feira</option>
+            <option value="quarta">Quarta-feira</option>
+            <option value="quinta">Quinta-feira</option>
+            <option value="sexta">Sexta-feira</option>
+        </select>
+    </div>
+    <br>
+    <input type="submit" value="Enviar" class="button" id="button">
+</form>
+
+    <script src="../meu amigo cão/js/cadastro.js"></script>
+</body>
+</html>
